@@ -1,10 +1,10 @@
 {
-  "name": "@umm/commandline_argument",
+  "name": "@umm/commandline_arguments",
   "version": "1.0.0",
   "description": "Parse command line arguments",
-  "homepage": "https://github.com/umm-projects/commandline_argument",
+  "homepage": "https://github.com/umm-projects/commandline_arguments",
   "bugs": {
-    "url": "https://github.com/umm-projects/commandline_argument/issues"
+    "url": "https://github.com/umm-projects/commandline_arguments/issues"
   },
   "scripts": {
     "postinstall": "node scripts/postinstall.js",
@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:umm-projects/commandline_argument"
+    "url": "git@github.com:umm-projects/commandline_arguments"
   },
   "files": [
     "Assets",
