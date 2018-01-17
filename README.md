@@ -20,20 +20,24 @@ using UnityEngine;
 public class Sample : MonoBehaviour {
 
     public void Start() {
-        Debug.Log(UnityModule.CommandLine.Arguments.GetString("string_key"));
-        Debug.Log(UnityModule.CommandLine.Arguments.GetBool("bool_key"));
+        // 引数が hoge fuga -a --bbb BBB の場合
+        Debug.Log(UnityModule.CommandLine.Arguments.GetMainArgumentList()[1]); // fuga
+        Debug.Log(UnityModule.CommandLine.Arguments.GetSwitch("a"));           // true
+        Debug.Log(UnityModule.CommandLine.Arguments.GetOption("bbb"));         // BBB
     }
 
 }
 ```
 
-* 上記のコードの場合 `--string_key hogehoge`, `--bool_key` といった引数を解釈できます。
 * ハイフンの数が1&#xff5e;2個の場合に引数と見なします。
-* `GetBool` は値を持たない引数が渡されている場合は真を、引数が存在しない場合に偽を返します
+* `GetSwitch()`, `GetOption()` は第一引数に `IEnumerable<string>` を取るコトができます。
+  * その場合、渡されたキーの中から最初にヒットした値を返します。
+* `GetOptionString()`, `GetOptionInt()`, `GetOptionBool()` は値をよしなにキャストして返します。
+* `GetOption***()` は第二引数にデフォルト値を取るコトができます。
 
 # License
 
-Copyright (c) 2017 Tetsuya Mori
+Copyright (c) 2017-2018 Tetsuya Mori
 
 Released under the MIT license, see [LICENSE.txt](LICENSE.txt)
 
