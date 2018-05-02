@@ -9,7 +9,7 @@
 # Install
 
 ```shell
-$ npm install github:umm-projects/commandline_argument
+yarn add "umm-projects/commandline_argument#^1.0.0"
 ```
 
 # Usage
