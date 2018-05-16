@@ -1,6 +1,6 @@
 {
   "name": "@umm/commandline_arguments",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Parse command line arguments",
   "homepage": "https://github.com/umm-projects/commandline_arguments",
   "bugs": {
