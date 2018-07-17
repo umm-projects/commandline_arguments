@@ -9,7 +9,7 @@
 # Install
 
 ```shell
-yarn add "umm-projects/commandline_argument#^1.0.0"
+yarn add "umm/commandline_argument#^1.0.0"
 ```
 
 # Usage
