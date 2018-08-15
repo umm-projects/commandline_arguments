@@ -1,5 +1,5 @@
 {
-    "name": "AssemblyDefinition",
+    "name": "umm@commandline_arguments-Tests-EditMode",
     "references": [
         "umm@commandline_arguments"
     ],
